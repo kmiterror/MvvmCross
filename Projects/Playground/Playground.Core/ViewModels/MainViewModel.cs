@@ -21,6 +21,7 @@ namespace Playground.Core.ViewModels
             : base(logProvider, navigationService)
         {
             ShowChildCommand = new MvxAsyncCommand(() => NavigationService.Navigate<ChildViewModel>());
+            ShowChildCommand = new MvxAsyncCommand(() => NavigationService.Navigate<ChildViewModel>());
 
             ShowModalCommand = new MvxAsyncCommand(() => NavigationService.Navigate<ModalViewModel>());
 

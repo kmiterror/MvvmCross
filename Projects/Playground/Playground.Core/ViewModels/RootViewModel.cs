@@ -108,6 +108,8 @@ namespace Playground.Core.ViewModels
             FragmentCloseCommand = new MvxAsyncCommand(() => NavigationService.Navigate<FragmentCloseViewModel>());
 
             ShowLocationCommand = new MvxAsyncCommand(() => NavigationService.Navigate<LocationViewModel>());
+            
+            ShowBrokenResultCommand = new MvxAsyncCommand(() => NavigationService.Navigate<ChildViewModel>());
         }
 
         public MvxNotifyTask MyTask { get; set; }
@@ -170,6 +172,8 @@ namespace Playground.Core.ViewModels
 
         public IMvxCommand FragmentCloseCommand { get; }
         public IMvxAsyncCommand ShowLocationCommand { get; }
+        public IMvxAsyncCommand ShowBrokenResultCommand { get; }
+        
 
         private bool _isVisible;
 

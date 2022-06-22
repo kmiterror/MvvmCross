@@ -110,6 +110,12 @@
                 android:layout_marginTop="10dp"
                 android:text="Location"
                 local:MvxBind="Click ShowLocationCommand;" />
+            <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="Show broken result"
+               local:MvxBind="Click ShowBrokenResultCommand;" />
             <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
